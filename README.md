@@ -1,5 +1,5 @@
 # Study: Effects of Extreme Temperatures on German Emergency Care
-The here provided script and data aim to reproduce an analysis on the effects of temperature and extreme temperature on emergency admissions to German hospitals. To reproduce the analysis, we provide a dataset that has been filtered based on data-protection rules, but import and report results from analysis on the complete data-set.
+The here provided script and data aim to reproduce an analysis on the effects of temperature and extreme temperature on emergency admissions to German hospitals. To reproduce the analysis, we provide a simulated dataset, but import and report results from analysison the complete data-set.
 
 The study implements a two stage time-series design.
 In the first stage, a distributed lag non-linear model is fit to data of each of Germanys counties spanning 10 years. 
@@ -8,7 +8,7 @@ Covariates include the day of the week, an indicator for school holidays, as wel
 In the second stage, results from the first stage are aggregated using meta analysis. 
 
 ## Data & Variables:
-* datain: County- & day-level observations of the number of emergency admissions and the mean daily temperature. The here provided data was filtered based on data-protection / privacy regulations imposed by the data-owner. Cells based on fewer than 3 emergency admissions were removed.
+* datain: County- & day-level observations of the number of emergency admissions and the mean daily temperature. The here provided data was "simulated" based on an original version of the data (excluding cells based on fewer than three emergency admissions) using the script "R_Script_XX_Addendum_Simulated-data.R" provided.
   * county - County-identifier
   * Date - Date of Admission
   * time - Number of Days since the beginning of the observation period
